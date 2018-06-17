@@ -7,7 +7,7 @@ About
 ============
 
 History
---------
+-------
 
 Gensim started off as a collection of various Python scripts for the Czech Digital Mathematics Library `dml.cz <http://dml.cz/>`_ in 2008,
 where it served to generate a short list of the most similar articles to a given article (**gensim = "generate similar"**).
@@ -30,27 +30,13 @@ In 2011, I started using `Github <https://github.com/piskvorky/gensim>`_ for sou
 and the Gensim website moved to its present domain. In 2013, Gensim got its current logo and website design. In 2018, we reworked the documentation style and started using the `ReadTheDocs theme <https://sphinx-rtd-theme.readthedocs.io/en/latest/>`_.
 
 
-Licensing
-----------
+The creation of Gensim was motivated by a perceived lack of available, scalable software
+frameworks that realize topic modelling, and/or their overwhelming internal complexity (hail Java!).
+You can read more about the motivation in our `LREC 2010 workshop paper <lrec2010_final.pdf>`_.
+If you want to cite Gensim in your own work, please refer to `that article (`BibTeX <bibtex_gensim.bib>`_).
 
-Gensim is licensed under the OSI-approved `GNU LGPLv2.1 license <http://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html>`_.
+You're welcome to share your results and experiments on the `mailing list <https://groups.google.com/group/gensim>`_.
 
-This means that it's free for both personal and commercial use, but if you make any
-modification to Gensim that you distribute to other people, you have to disclose
-the source code of these modifications.
-
-Apart from that, you are free to redistribute Gensim in any way you like, though you're
-not allowed to modify its license (doh!).
-
-My intent here is to **get more help and community involvement** with the development of Gensim.
-The legalese is therefore less important to me than your input and contributions.
-`Contact me <mailto:me@radimrehurek.com>`_ if LGPL doesn't fit your bill but you'd like the LGPL restrictions liften.
-
-.. seealso::
-
-    We built a high performance server for NLP, document analysis, indexing, search and clustering: scaletext.ai.
-    ScaleText is a commercial product, available both on-prem or via SaaS.
-    Reach out at info@scaletext.com if you need an industry-grade tool with professional support.
 
 Contributors
 --------------
