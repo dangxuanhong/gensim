@@ -3,18 +3,18 @@
 Core concepts
 -------------
 
-The whole `gensim` package revolves around the concepts of :term:`corpus`, :term:`vector` and
+The whole Gensim package revolves around the concepts of :term:`corpus`, :term:`vector` and
 :term:`model`.
 
 .. glossary::
 
     Corpus
         A collection of digital documents. This collection is used to automatically
-        infer the structure of the documents, their topics, etc. For
-        this reason, the collection is also called a *training corpus*. This inferred
-        latent structure can be later used to assign topics to new documents, which did
-        not appear in the training corpus.
-        No human intervention (such as tagging the documents by hand, or creating
+        infer the vector structure of the documents, their topics, etc. For
+        this reason, the collection is also called a *training corpus*.
+
+        This inferred latent structure can be later used to assign topics to new documents, which did
+        not appear in the training corpus. No human intervention (such as tagging the documents by hand, or creating
         other metadata) is required.
 
     Vector
@@ -49,27 +49,18 @@ The whole `gensim` package revolves around the concepts of :term:`corpus`, :term
 
         Gensim does not prescribe any specific corpus format;
         a corpus is anything that, when iterated over, successively yields these sparse vectors.
-        For example, `set((((2, 2.0), (3, 5.0)), ((0, 1.0), (3, 1.0))))` is a trivial
-        corpus of two documents, each with two non-zero `feature-answer` pairs.
-
-
+        For example, ``[ [(2, 2.0), (3, 5.0)], [(0, 1.0), (3, 1.0)] ]``
+        is a simple corpus of two documents, each with two non-zero `feature-answer` pairs.
 
     Model
-        We use **model** as an abstract term referring to a transformation from
-        one document representation to another. In `gensim` documents are
+        We use **model** as an abstract term referring to the code and associated data
+        required to transform one document representation to another. In Gensim, documents are
         represented as vectors so a model can be thought of as a transformation
-        between two vector spaces. The details of this transformation are
-        learned from the training corpus.
+        between two vector spaces.
 
-
-        For example, consider a transformation that takes a raw count of word
-        occurrences and weights them so that common words are discounted and
-        rare words are promoted. The exact amount that any particular word is
-        weighted by is determined by the relative frequency of that word in the
-        training corpus. When we apply this model we transform from one vector
-        space (containing the raw word counts) to another (containing the
-        weighted counts).
+        The details of this transformation are learned from the training corpus. Gensim
+        implements multiple models, such as Word2Vec, Latent Semantic Indexing or FastText.
 
 .. seealso::
 
-    For some examples on how this works out in code, go to :doc:`tutorials <tutorial>`.
+    For some examples on how this works out in code, go to :doc:`Tutorials <tutorial>`.

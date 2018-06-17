@@ -81,6 +81,7 @@ Gensim is licensed under the OSI-approved `GNU LGPLv2.1 license <http://www.gnu.
    :maxdepth: 1
    :caption: Tutorials
 
+   tutorial
    tut1
    tut2
    tut3
